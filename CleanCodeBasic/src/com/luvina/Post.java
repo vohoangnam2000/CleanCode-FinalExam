@@ -9,6 +9,8 @@ public class Post {
     private User author;
     private ArrayList<Comment> comments;
 
+    public static ArrayList<Post> posts = new ArrayList<>();
+
     public long getId() {
         return id;
     }
@@ -48,24 +50,30 @@ public class Post {
     public void setComments(ArrayList<Comment> comments) {
         this.comments = comments;
     }
-    public Post(long id,String title,String content,User user){
+
+    public Post(long id, String title, String content, User user) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.author = user;
-    }
-    public boolean isAuthorPost(Post post){
-        boolean isAuthor = false;
-        if(isSameID(post.getId()) && isSameAuthor(post.getAuthor())){
-            isAuthor = true;
-        }
-        return isAuthor;
-    }
-    public boolean isSameID(long id){
-        return this.getId() == id;
-    }
-    public boolean isSameAuthor(User user){
-        return this.getAuthor().equals(user);
+        this.comments = Comment.getCommentsByPost(this);
     }
 
+    public static void post(Post post) {
+        posts.add(post);
+    }
+
+    public static ArrayList<Post> getPostsByUser(User user) {
+        ArrayList<Post> postByUser = new ArrayList<>();
+        for (Post p: posts) {
+            if (p.getAuthor().equals(user)){
+                postByUser.add(p);
+            }
+        }
+        return postByUser;
+    }
+
+    public static void delete(Post post) {
+        posts.remove(post);
+    }
 }

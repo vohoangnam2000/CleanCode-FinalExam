@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class User {
     private long id;
     private String fullName;
-    private ArrayList<Post> posts = new ArrayList<>();
-    private ArrayList<Comment> comments = new ArrayList<>();
+    private ArrayList<Post> posts;
+    private ArrayList<Comment> comments;
 
     public long getId() {
         return id;
@@ -24,12 +24,13 @@ public class User {
         this.fullName = fullName;
     }
 
-    public ArrayList<Post> getPosts() {
-        return posts;
-    }
 
     public void setPosts(ArrayList<Post> posts) {
         this.posts = posts;
+    }
+
+    public ArrayList<Post> getPosts() {
+        return posts;
     }
 
     public ArrayList<Comment> getComments() {
@@ -39,21 +40,23 @@ public class User {
     public void setComments(ArrayList<Comment> comments) {
         this.comments = comments;
     }
-    public User(long id, String fullName){
+
+    public User(long id, String fullName) {
         this.id = id;
         this.fullName = fullName;
+        this.posts = Post.getPostsByUser(this);
+        this.comments = Comment.getCommentsByUser(this);
     }
-    public void submit(Post post) {
-        this.posts.add(post);
+
+    public void submitPost(Post post) {
+        Post.post(post);
     }
-    public void deleteSubmit(Post post){
-        for(int i = 0; i < this.posts.size(); i++) {
-            if(post != null && this.posts.get(i).isAuthorPost(post)){
-                this.posts.remove(i);
-                System.out.println("Remove Post title :" + post.getTitle());
-                return;
-            }
-        }
-        System.out.println("Donot Have Post title :" + post.getTitle());
+
+    public void submitComment(Comment comment){
+        Comment.Post(comment);
+    }
+
+    public void delete(Post post) {
+        Post.delete(post);
     }
 }
