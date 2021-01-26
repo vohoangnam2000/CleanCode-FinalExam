@@ -30,7 +30,7 @@ public class User {
     }
 
     public ArrayList<Post> getPosts() {
-        return posts;
+        return Post.getPostsByUser(this);
     }
 
     public ArrayList<Comment> getComments() {
@@ -52,11 +52,52 @@ public class User {
         Post.post(post);
     }
 
-    public void submitComment(Comment comment){
-        Comment.Post(comment);
+    public void delete(Post post) {
+        if (isPermissionDeletePost(post)) {
+            Post.delete(post);
+        } else {
+            System.out.println("You donot have permission");
+        }
     }
 
-    public void delete(Post post) {
-        Post.delete(post);
+    public boolean isPermissionDeletePost(Post post) {
+        boolean permission = false;
+        if (this.equals(post.getAuthor())) {
+            permission = true;
+        }
+        return permission;
+    }
+
+    public void submitComment(Comment comment) {
+        if(isExisPost(comment.getPost())) {
+            Comment.Post(comment);
+        } else {
+            System.out.println("Post has delete");
+        }
+    }
+
+    public boolean isExisPost(Post post){
+        boolean isExisPost = false;
+        ArrayList<Post> postOfUser = this.getPosts();
+        if(postOfUser.contains(post)){
+            isExisPost = true;
+        }
+        return isExisPost;
+    }
+
+    public void deleteComment(Comment comment) {
+        if (isPermissionDeleteComment(comment)) {
+            Comment.Delete(comment);
+        } else {
+            System.out.println("You donot have permission");
+        }
+    }
+
+    public boolean isPermissionDeleteComment(Comment comment) {
+        boolean permission = false;
+        if (this.equals(comment.getUser())) {
+            permission = true;
+        }
+        return permission;
     }
 }

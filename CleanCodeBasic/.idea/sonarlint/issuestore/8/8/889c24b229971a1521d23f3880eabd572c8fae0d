@@ -1,5 +1,15 @@
 
+’
+java:S1319B"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(øàŠçùÿÿÿÿ8³æôöó.
+H
+java:S1444"+Make this "public static posts" field final(°Š¸Ô8³æôöó.
+n
+java:S1104"QMake posts a static final constant or non-public and provide accessors if needed.(°Š¸Ô8³æôöó.
 •
-java:S13190"sThe type of the "comments" object should be an interface such as "List" rather than the implementation "ArrayList".(’ ø¥ûÿÿÿÿ8¼ĞÎó.
+java:S13192"sThe type of the "comments" object should be an interface such as "List" rather than the implementation "ArrayList".(’ ø¥ûÿÿÿÿ8¼ĞÎó.
 
-java:S1319,"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(é¬ê8¢Îó.
+java:S1319."pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(é¬ê8¢Îó.
+
+java:S1319"pThe type of the "posts" object should be an interface such as "List" rather than the implementation "ArrayList".(°Š¸Ô8³æôöó.
+:
+java:S2386"Make this member "protected".(°Š¸Ô8³æôöó.

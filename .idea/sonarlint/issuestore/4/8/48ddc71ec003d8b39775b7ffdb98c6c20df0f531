@@ -1,9 +1,0 @@
-
-
-java:S1319$"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(é¬ê8÷‹Ñğó.
-
-java:S1319"pThe type of the "posts" object should be an interface such as "List" rather than the implementation "ArrayList".(òìù¶8÷‹Ñğó.
-•
-java:S1319("sThe type of the "comments" object should be an interface such as "List" rather than the implementation "ArrayList".(’ ø¥ûÿÿÿÿ8÷‹Ñğó.
-
-java:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Û¸İ×8û´ñó.

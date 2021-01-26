@@ -1,13 +1,14 @@
 
-Z	java:S1065"9Replace this use of System.out or System.err by a logger.(Ó“Î‹øÿÿÿÿ8†Œ‰Ğó.
-Z	java:S1069"9Replace this use of System.out or System.err by a logger.(³şüÿÿÿÿ8´îñĞó.
-d
-java:S22599"BA "NullPointerException" could be thrown; "post" is nullable here.(³şüÿÿÿÿ8´îñĞó.
-
-java:S1319"pThe type of the "posts" object should be an interface such as "List" rather than the implementation "ArrayList".(òìù¶8»–‡Îó.
-
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Û¸İ×8æû†Îó.
 •
-java:S1319'"sThe type of the "comments" object should be an interface such as "List" rather than the implementation "ArrayList".(’ ø¥ûÿÿÿÿ8ŠÇ‡Îó.
+java:S1319("sThe type of the "comments" object should be an interface such as "List" rather than the implementation "ArrayList".(’ ø¥ûÿÿÿÿ8ŠÇ‡Îó.
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(–áÓ8¥â–øó.
 
-java:S1319#"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(é¬ê8…¯‡Îó.
+java:S1319"pThe type of the "posts" object should be an interface such as "List" rather than the implementation "ArrayList".(òìù¶8»–‡Îó.
+U	java:S106\"9Replace this use of System.out or System.err by a logger.(–áÓ8ô¦–øó.
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(ì¾È¶8ƒ¸ïøó.
+
+java:S1319$"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(é¬ê8…¯‡Îó.
+
+java:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Û¸İ×8æû†Îó.
+K
+java:S1068")Remove this unused "posts" private field.(¶ƒÈ ûÿÿÿÿ8êİèøó.

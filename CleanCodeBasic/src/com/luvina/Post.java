@@ -75,5 +75,9 @@ public class Post {
 
     public static void delete(Post post) {
         posts.remove(post);
+        ArrayList<Comment> commentsInPost = Comment.getCommentsByPost(post);
+        for (Comment c: commentsInPost) {
+            Comment.Delete(c);
+        }
     }
 }

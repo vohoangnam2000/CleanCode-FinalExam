@@ -48,26 +48,31 @@ public class Comment {
         this.user = user;
     }
 
-    public static void Post(Comment comment){
+    public static void Post(Comment comment) {
         comments.add(comment);
     }
+
     public static ArrayList<Comment> getCommentsByUser(User user) {
         ArrayList<Comment> commentByUser = new ArrayList<>();
-        for (Comment c: comments) {
-            if (c.getUser().equals(user)){
+        for (Comment c : comments) {
+            if (c.getUser().equals(user)) {
                 commentByUser.add(c);
             }
         }
         return commentByUser;
     }
+
     public static ArrayList<Comment> getCommentsByPost(Post post) {
         ArrayList<Comment> commentByPost = new ArrayList<>();
-        for (Comment c: comments) {
-            if (c.getPost().equals(post)){
+        for (Comment c : comments) {
+            if (c.getPost().equals(post)) {
                 commentByPost.add(c);
             }
         }
         return commentByPost;
     }
 
+    public static void Delete(Comment comment) {
+        comments.remove(comment);
+    }
 }
