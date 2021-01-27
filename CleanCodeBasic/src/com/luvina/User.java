@@ -69,17 +69,17 @@ public class User {
     }
 
     public void submitComment(Comment comment) {
-        if(isExisPost(comment.getPost())) {
+        if (isExisPost(comment.getPost())) {
             Comment.Post(comment);
         } else {
             System.out.println("Post has delete");
         }
     }
 
-    public boolean isExisPost(Post post){
+    public boolean isExisPost(Post post) {
         boolean isExisPost = false;
         ArrayList<Post> postOfUser = this.getPosts();
-        if(postOfUser.contains(post)){
+        if (postOfUser.contains(post)) {
             isExisPost = true;
         }
         return isExisPost;

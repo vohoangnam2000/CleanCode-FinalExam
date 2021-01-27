@@ -7,6 +7,7 @@ public class Comment {
     private String title;
     private Post post;
     private User user;
+
     public static ArrayList<Comment> comments = new ArrayList<>();
 
     public long getId() {

@@ -1,0 +1,14 @@
+
+D
+java:S1068")Remove this unused "posts" private field.(¶ƒÈ ûÿÿÿÿ
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(ì¾È¶
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(–áÓ
+†
+java:S1319"pThe type of the "posts" object should be an interface such as "List" rather than the implementation "ArrayList".(òìù¶
+†
+java:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Û¸İ×
+
+java:S1319("sThe type of the "comments" object should be an interface such as "List" rather than the implementation "ArrayList".(’ ø¥ûÿÿÿÿ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(–áÓ
+†
+java:S1319$"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(é¬ê

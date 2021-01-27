@@ -65,8 +65,8 @@ public class Post {
 
     public static ArrayList<Post> getPostsByUser(User user) {
         ArrayList<Post> postByUser = new ArrayList<>();
-        for (Post p: posts) {
-            if (p.getAuthor().equals(user)){
+        for (Post p : posts) {
+            if (p.getAuthor().equals(user)) {
                 postByUser.add(p);
             }
         }
@@ -74,10 +74,10 @@ public class Post {
     }
 
     public static void delete(Post post) {
-        posts.remove(post);
-        ArrayList<Comment> commentsInPost = Comment.getCommentsByPost(post);
-        for (Comment c: commentsInPost) {
+        ArrayList<Comment> commentsInPost = post.getComments();
+        for (Comment c : commentsInPost) {
             Comment.Delete(c);
         }
+        posts.remove(post);
     }
 }
