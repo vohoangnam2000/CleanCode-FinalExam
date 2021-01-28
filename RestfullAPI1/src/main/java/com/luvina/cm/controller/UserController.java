@@ -1,6 +1,7 @@
 package com.luvina.cm.controller;
 
 import com.luvina.cm.dto.UserDto;
+import com.luvina.cm.dto.UserResDto;
 import com.luvina.cm.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -14,12 +15,11 @@ import javax.validation.Valid;
 @RestController
 @RequiredArgsConstructor
 public class UserController {
-    public UserService userService;
+    public final UserService userService;
 
     @PostMapping("/api/v1/users")
-    public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserDto userDto) {
-        UserDto response = userService.saveUser(userDto);
+    public ResponseEntity<UserResDto> createUser(@Valid @RequestBody UserDto userDto) {
+        UserResDto response = userService.saveUser(userDto);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
-
 }
