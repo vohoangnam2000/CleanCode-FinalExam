@@ -18,7 +18,7 @@ public class Main {
         User user2 = new User(2, "Do Tuan Anh");
 
         System.out.println("User1 remove post 1");
-        user1.delete(post1);
+        user1.deletePost(post1);
 
         System.out.println("User2 comment1 to  Post 1");
         Comment comment1 = new Comment(1L, "Comment post số 1", post1, user1);

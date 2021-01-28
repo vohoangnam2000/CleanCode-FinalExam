@@ -52,15 +52,15 @@ public class User {
         Post.post(post);
     }
 
-    public void delete(Post post) {
+    public void deletePost(Post post) {
         if (isPermissionDeletePost(post)) {
             Post.delete(post);
         } else {
-            System.out.println("You donot have permission");
+            System.out.println("You haven't permission");
         }
     }
 
-    public boolean isPermissionDeletePost(Post post) {
+    private boolean isPermissionDeletePost(Post post) {
         boolean permission = false;
         if (this.equals(post.getAuthor())) {
             permission = true;
@@ -72,7 +72,7 @@ public class User {
         if (isExisPost(comment.getPost())) {
             Comment.Post(comment);
         } else {
-            System.out.println("Post has delete");
+            System.out.println("Post has been deleted");
         }
     }
 
@@ -89,11 +89,11 @@ public class User {
         if (isPermissionDeleteComment(comment)) {
             Comment.Delete(comment);
         } else {
-            System.out.println("You donot have permission");
+            System.out.println("You haven't permission");
         }
     }
 
-    public boolean isPermissionDeleteComment(Comment comment) {
+    private boolean isPermissionDeleteComment(Comment comment) {
         boolean permission = false;
         if (this.equals(comment.getUser())) {
             permission = true;

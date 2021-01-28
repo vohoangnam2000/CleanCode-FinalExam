@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e762f95b-a5a8-40ac-846c-d80904c15059" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/46940711b53dc904343a739982f1a0ac78ae1c16" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/46940711b53dc904343a739982f1a0ac78ae1c16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48ddc71ec003d8b39775b7ffdb98c6c20df0f531" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48ddc71ec003d8b39775b7ffdb98c6c20df0f531" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6fa21bdcdde8574a53174b8122dd230c5cfc88da" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6fa21bdcdde8574a53174b8122dd230c5cfc88da" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4ec2839c937d567ec37f1be7d354274b01ac109" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4ec2839c937d567ec37f1be7d354274b01ac109" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeBasic/src/com/luvina/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/CleanCodeBasic/src/com/luvina/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeBasic/src/com/luvina/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/CleanCodeBasic/src/com/luvina/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanCodeBasic/src/com/luvina/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CleanCodeBasic/src/com/luvina/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CleanCodeBasic/src/com/luvina/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/CleanCodeBasic/src/com/luvina/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/RestfullAPI1" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
