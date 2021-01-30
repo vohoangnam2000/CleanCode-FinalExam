@@ -11,10 +11,10 @@ import javax.persistence.*;
 @Data
 @Getter
 @Setter
-public class Student extends User{
+public class Student extends User {
     private int year;
 
-    public Student(UserDto dto){
+    public Student(UserDto dto) {
         this.name = dto.getName();
         this.email = dto.getEmail();
         this.password = dto.getPassword();

@@ -15,7 +15,7 @@ public class Teacher extends User {
     private String phone;
     private int experiences;
 
-    public Teacher(UserDto dto){
+    public Teacher(UserDto dto) {
         this.name = dto.getName();
         this.email = dto.getEmail();
         this.password = dto.getPassword();
