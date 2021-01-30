@@ -4,8 +4,11 @@ import com.luvina.cm.dto.UserDto;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.scheduling.config.Task;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -25,4 +28,9 @@ public class Teacher extends User {
 
     public Teacher() {
     }
+    @ManyToOne
+    @JoinColumn(name = "course_id")
+    private Course course;
+
+
 }
