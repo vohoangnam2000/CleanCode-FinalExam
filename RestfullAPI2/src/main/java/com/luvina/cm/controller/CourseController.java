@@ -19,10 +19,10 @@ public class CourseController {
 
     @GetMapping("/api/v1/courses")
     public ResponseEntity<List<CourseResDto>> getCourseByName(@RequestParam(value = "keyword") String keyword,
-                                                        @RequestParam(value = "sortMode") String sortMode) {
-        System.out.println("getName "+ keyword);
-        System.out.println("SortName "+ sortMode);
-        List<CourseResDto> response = courseService.getCourse(keyword,sortMode);
+                                                              @RequestParam(value = "sortMode") String sortMode) {
+        System.out.println("getName " + keyword);
+        System.out.println("SortName " + sortMode);
+        List<CourseResDto> response = courseService.getCourse(keyword, sortMode);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

@@ -28,9 +28,8 @@ public class Teacher extends User {
 
     public Teacher() {
     }
-    @ManyToOne
-    @JoinColumn(name = "course_id")
-    private Course course;
 
+    @OneToMany(mappedBy = "teacher",cascade = CascadeType.ALL)
+    private List<Course> courses = new ArrayList<>();
 
 }

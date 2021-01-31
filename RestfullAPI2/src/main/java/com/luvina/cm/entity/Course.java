@@ -2,6 +2,7 @@ package com.luvina.cm.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +19,7 @@ public class Course {
     private String location;
     private String opened;
 
-    @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
-    private List<Teacher> teachers = new ArrayList<>();
-
-
+    @ManyToOne
+    @JoinColumn(name = "teacher_id")
+    private Teacher teacher;
 }
