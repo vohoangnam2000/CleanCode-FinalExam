@@ -3,7 +3,6 @@ package com.luvina.cm.factory;
 import com.luvina.cm.entity.Course;
 import com.luvina.cm.enums.SortMode;
 import org.springframework.stereotype.Component;
-
 import java.util.Collections;
 import java.util.List;
 

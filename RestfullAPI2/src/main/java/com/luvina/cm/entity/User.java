@@ -1,7 +1,6 @@
 package com.luvina.cm.entity;
 
 import lombok.Getter;
-
 import javax.persistence.*;
 
 @Entity
