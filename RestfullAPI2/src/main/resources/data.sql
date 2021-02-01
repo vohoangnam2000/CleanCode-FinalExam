@@ -1,3 +1,4 @@
+
 INSERT INTO User(id,email, name, password) VALUES
 (1,'vohoangnam@luvina.net', 'vohoangnam', 'abc123');
 
@@ -18,7 +19,3 @@ INSERT INTO Course(id,name, description, location,opened,teacher_id) VALUES
 
 INSERT INTO Course(id,name, description, location,opened,teacher_id) VALUES
 (3,'Spring Boot Cloud', 'Spring Boot Cloud', 'Hanoi CS1','02112020',2);
-
-
-
-
