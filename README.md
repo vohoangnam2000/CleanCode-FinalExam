@@ -59,8 +59,8 @@ Code đẹp như là viết một bài văn hay. Code đẹp không làm mơ h�
 14-b
 15-c
 16-a
-17-
-18
+17-d
+18-a
 19-C
 20
 21-B
