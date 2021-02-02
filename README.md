@@ -40,7 +40,7 @@ Code đẹp như là viết một bài văn hay. Code đẹp không làm mơ h�
 
 ## Phần 5: Thiết kế RESTful API 2
 
-[Source Code Restful API 1](https://github.com/vohoangnam2000/CleanCode-FinalExam/tree/master/RestfullAPI2)
+[Source Code Restful API 2](https://github.com/vohoangnam2000/CleanCode-FinalExam/tree/master/RestfullAPI2)
 
 ## Phần 6: Trả lời trắc nghiệm
 1-c
