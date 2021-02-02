@@ -15,7 +15,8 @@
     
 **3.Trả lời ý kiến Clean Code chỉ làm phức tạp thêm vấn đề, và chậm lại hiệu suất làm việc của nhóm:**
 
-    - Code đẹp như là viết một bài văn hay.Code đẹp không làm mơ hồ ý đồ của người viết.Clean code sẽ giúp ng review code được dễ dàng, unit test dễ viết. Trong một số trường hợp người fix bug không phải là người code sẽ dễ dàng đánh giá được phạm vi ảnh hưởng.
+    - Trước hết, chúng ta cần hiểu rõ Clean code là gì? Thuật ngữ clean code để chỉ đến những mã nguồn tốt, đó là code dễ đọc, dễ hiểu, dễ sửa chữa và bảo trì.
+Code đẹp như là viết một bài văn hay. Code đẹp không làm mơ hồ ý đồ của người viết. Clean code sẽ giúp người review code được dễ dàng, dễ viết unit test . Trong một số trường hợp người fix bug không phải là người code sẽ dễ dàng đánh giá được phạm vi ảnh hưởng. Bên cạnh đó, clean code còn hỗ trợ lập trình viên trong việc duy trì, tối ưu hóa thời gian và nhân lực trong trường hợp cần sửa đổi, khắc phục. Do đó, clean code giúp đảm bảo mã nguồn có chất lượng tốt, giúp ích cho việc cộng tác nhóm, dễ dàng bảo trì và mở rộng hệ thống.
     
 **4.Đáp án của tôi là đề xuất của Vân phù hợp với quy ước CleanCode:**
 
