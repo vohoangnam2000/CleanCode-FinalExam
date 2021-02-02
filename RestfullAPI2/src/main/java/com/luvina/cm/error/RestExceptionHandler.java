@@ -1,10 +1,10 @@
 package com.luvina.cm.error;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-@Controller
+@ControllerAdvice
 public class RestExceptionHandler {
     @ExceptionHandler({ServiceRuntimeException.class})
     public ResponseEntity<ApiError> handleServiceRuntimeException(ServiceRuntimeException ex) {
