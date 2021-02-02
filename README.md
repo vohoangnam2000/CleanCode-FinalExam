@@ -41,8 +41,32 @@
 
 [Source Code Restful API 1](https://github.com/vohoangnam2000/CleanCode-FinalExam/tree/master/RestfullAPI2)
 
-
-
+## Phần 6: Trả lời trắc nghiệm
+1-c
+2-b
+3-d
+4-c
+5
+6
+7
+8-a
+9-b
+10-a
+11-d
+12-c
+13-b
+14-b
+15-c
+16-a
+17-
+18
+19-C
+20
+21-B
+22-c
+23-b
+24-a
+25-c
 
 
 
