@@ -1,5 +1,6 @@
 package com.luvina.cm.service;
 
+import com.luvina.cm.configuration.MaskingPatternLayout;
 import com.luvina.cm.dto.UserDto;
 import com.luvina.cm.dto.UserResDto;
 import com.luvina.cm.entity.User;
@@ -12,8 +13,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
@@ -39,7 +39,7 @@ public class UserService {
 
     @Transactional
     public UserResDto findUserByID(int userId) {
-        User user = userRepository.findById(userId);
+        User user = userRepository.findById(userId).orElseThrow();
         return modelMapper.map(user, UserResDto.class);
     }
 

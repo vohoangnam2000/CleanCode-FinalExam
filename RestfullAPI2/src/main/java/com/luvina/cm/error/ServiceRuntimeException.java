@@ -3,6 +3,8 @@ package com.luvina.cm.error;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
+import java.util.function.Supplier;
+
 @Getter
 public class ServiceRuntimeException extends RuntimeException {
     private final HttpStatus httpStatus;
