@@ -10,7 +10,7 @@ import javax.persistence.*;
 @NamedQuery(name = "User.findById", query = "select u from User u where u.id = ?1")
 public abstract class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected int id;
     protected String name;
     protected String email;
